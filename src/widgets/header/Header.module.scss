@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  padding: 14px 28px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  .logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .navigation {
+    &List {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+      &Item {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@import "./shared/assets/fonts/fonts.scss";
+@import "shared/basic/assets/fonts/fonts.scss";
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;

@@ -1,11 +1,17 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
-import { Main } from '../../pages/main'
+import { routesList } from '../config'
 
 export const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
+        {routesList.map((routeConfig, index) => (
+          <Route
+            key={routeConfig.path + index}
+            path={routeConfig.path}
+            element={routeConfig.element}
+          />
+        ))}
       </Routes>
     </BrowserRouter>
   )

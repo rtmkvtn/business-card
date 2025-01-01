@@ -1,9 +1,10 @@
-import { default as logoIcon, ReactComponent as LogoIcon } from './ui/logo.svg'
+import githubIcon from './ui/github-icon.svg'
+import GithubIcon from './ui/github-icon.svg?react'
 import { FunctionComponent, SVGProps } from 'react'
 
 type SvgIconComponent = FunctionComponent<SVGProps<SVGSVGElement>>
 
-export type IconTypes = 'logo'
+export type IconTypes = 'github'
 
 type IProps = {
   tag?: 'svg' | 'img'
@@ -33,7 +34,7 @@ const Icon = ({
     svg: null,
   }
 
-  if (type === 'logo') result = { img: logoIcon, svg: LogoIcon }
+  if (type === 'github') result = { img: githubIcon, svg: GithubIcon }
 
   if (isSvg && result.svg) {
     return (
